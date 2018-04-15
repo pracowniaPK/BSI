@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BSI</title>
+    <link rel="stylesheet prefetch" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+    <link rel="stylesheet" href="styl.css" />
+    <script>
+        function CheckForm() {
+            var name1 = document.getElementById("name1");
+            var name2 = document.getElementById("name2");
+            var phone = document.getElementById("phone");
+            var city = document.getElementById("city");
+            var street = document.getElementById("street");
+            var address_number = document.getElementById("address_number");
+            var address_number2 = document.getElementById("address_number2");
+            var address_code = document.getElementById("address_code");
+            var birthday = document.getElementById("birthday");
+            var email = document.getElementById("email");
+
+            var name_regex = /^([A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,30})$/;
+            var number_regex = /^(\d{1,20})$/;
+            var address_code_regex = /^(\d{2}-\d{3})$/;
+            var phone_regex = /^(\d{9})$/;
+            var phone_regex2 = /^(\d{3}-\d{3}-\d{3})$/;
+            var email_regxp = /^([\w]{1,30}@[\w]{2,10}.[\w]{2,5})$/;
+            var birthdate_regxp = /^([0-3][0-9]-[0-1][0-9]-\d{4})$/;
+
+            var send = true;
+
+            if (name_regex.test(name1.value)) {
+                name1.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                name1.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (name_regex.test(name2.value)) {
+                name2.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                name2.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (email_regxp.test(email.value)) {
+                email.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                email.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (phone_regex.test(phone.value) || phone_regex2.test(phone.value)) {
+                phone.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                phone.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (name_regex.test(city.value)) {
+                city.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                city.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (name_regex.test(street.value)) {
+                street.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                street.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (number_regex.test(address_number.value)) {
+                address_number.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                address_number.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (number_regex.test(address_number2.value)) {
+                address_number2.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                address_number2.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (address_code_regex.test(address_code.value)) {
+                address_code.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                address_code.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+            if (birthdate_regxp.test(birthday.value)) {
+                birthday.style.background = "rgba(255, 255, 255, 0.329)";
+            } else {
+                birthday.style.background = "rgba(255, 125, 125, 0.5)";
+                send = false;
+            }
+
+            return send;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="ramka">
+        <div class="ramka_linki">
+            <a class="menu" href="index.htm">powrót: Główna</a>
+        </div>
+        <h1>Form</h1>
+        <h2>Dane</h2>
+
+        <form action="index.htm" onsubmit="return CheckForm();" action="#" method="get">
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Imię:</div>
+                <div class="ramka_form">
+                    <input name="name1" id="name1" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Nazwisko:</div>
+                <div class="ramka_form">
+                    <input name="name2" id="name2" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Hasło:</div>
+                <div class="ramka_form">
+                    <input type="password" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Prawo jazdy:</div>
+                <div class="ramka_form">
+                    <input type="checkbox" value="1" /> tak
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Adres e-mail:</div>
+                <div class="ramka_form">
+                    <input name="email" id="email" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Numer telefonu:</div>
+                <div class="ramka_form">
+                    <input name="phone" id="phone" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Województwo:</div>
+                <div class="ramka_form">
+                    <select>
+                        <option>Mazowieckie</option>
+                        <option>Dolnośląskie</option>
+                        <option>Kujawsko-pomorskie</option>
+                        <option>Lubelskie</option>
+                        <option>Lubuskie</option>
+                        <option>Łódzkie</option>
+                        <option>Małopolskie</option>
+                        <option>Opolskie</option>
+                        <option>Podkarpackie</option>
+                        <option>Podlaskie</option>
+                        <option>Pomorskie</option>
+                        <option>Śląskie</option>
+                        <option>Świętokrzyskie</option>
+                        <option>Warmińsko-mazurskie</option>
+                        <option>Wielkopolskie</option>
+                        <option>Zachodniopomorskie</option>
+                        <option>inne</option>
+                        <option>Nevada</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Miasto:</div>
+                <div class="ramka_form">
+                    <input name="city" id="city" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Ulica:</div>
+                <div class="ramka_form">
+                    <input name="street" id="street" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Numer domu:</div>
+                <div class="ramka_form">
+                    <input name="address_number" id="address_number" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Numer mieszkania:</div>
+                <div class="ramka_form">
+                    <input name="address_number2" id="address_number2" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Kod pocztowy:</div>
+                <div class="ramka_form">
+                    <input name="address_code" id="address_code" type="text" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Płeć:</div>
+                <div class="ramka_form">
+                    M
+                    <input type="radio" value="1" /> K
+                    <input type="radio" value="2" checked="checked" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Data urodzenia:</div>
+                <div class="ramka_form">
+                    <input name="birthday" id="birthday" type="text" placeholder="dd-mm-rrrr" />
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    Uwagi:</div>
+                <div class="ramka_form">
+                    <textarea name="uwagi" rows="5" cols="10">dziń dybry</textarea>
+                </div>
+            </div>
+            <div class="nadramka_form">
+                <div class="ramka_form">
+                    <input type="submit" />
+                </div>
+                <div class="ramka_form">
+                    <input type="reset" />
+                </div>
+            </div>
+        </form>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+            </a>
+        </p>
+
+    </div>
+</body>
+
+</html>

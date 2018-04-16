@@ -1,0 +1,117 @@
+div,
+input {
+  position: absolute;
+  font-weight: bold;
+  color: #540202;
+  letter-spacing: 1pt;
+  font-size: 40px;
+  font-family: arial, helvetica, sans-serif;
+  border: 0;
+}
+
+.number {
+  left: 1035px;
+  top: 180px;
+}
+
+.vendor {
+  left: 185px;
+  top: 80px;
+}
+
+.vendor2 {
+  left: 185px;
+  top: 150px;
+}
+
+.purchaser {
+  left: 175px;
+  top: 265px;
+}
+
+.purchaser2 {
+  left: 175px;
+  top: 315px;
+}
+
+.place {
+  left: 700px;
+  top: 100px;
+}
+
+.day {
+  left: 1320px;
+  top: 105px;
+}
+.month {
+  left: 1405px;
+  top: 105px;
+}
+.year {
+  left: 1550px;
+  top: 105px;
+}
+
+.no {
+  left: 128px;
+}
+
+.name {
+  left: 165px;
+}
+
+.measure {
+  left: 975px;
+}
+
+.quantity {
+  left: 1150px;
+}
+
+.price {
+  left: 1270px;
+}
+
+.price_total {
+  left: 1470px;
+}
+
+.row1 {
+  top: 485px;
+}
+
+.row2 {
+  top: 532px;
+}
+
+.row3 {
+  top: 579px;
+}
+
+.row4 {
+  top: 626px;
+}
+
+.row5 {
+  top: 673px;
+}
+
+.price_total_total {
+  left: 1430px;
+  top: 1055px;
+}
+
+.payment {
+  left: 1100px;
+  top: 1280px;
+}
+
+.bank {
+  left: 1010px;
+  top: 1335px;
+}
+
+.bank2 {
+  left: 1010px;
+  top: 1385px;
+}

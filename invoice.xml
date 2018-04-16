@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="invoice.xsl"?>
+<invoice>
+    <number>1/04/2018</number>
+    <place>Warszawa</place>
+    <day>17</day>
+    <month>04</month>
+    <year>18</year>
+    <vendor>PKacz Inc.</vendor>
+    <vendor2>ul. Żółta 2, Warszawa</vendor2>
+    <purchaser>Zenon Bąk</purchaser>
+    <purchaser2>al. Uroczysta 144/512, Kraków</purchaser2>
+    <item>
+        <no>1</no>
+        <name>Gwoździe</name>
+        <measure>opak.</measure>
+        <quantity>2</quantity>
+        <price>10</price>
+        <price_total>20</price_total>
+    </item>
+    <item>
+        <no>2</no>
+        <name>Grabie</name>
+        <measure>szt.</measure>
+        <quantity>1</quantity>
+        <price>80</price>
+        <price_total>80</price_total>
+    </item>
+    <item>
+        <no>3</no>
+        <name>Balon</name>
+        <measure>szt.</measure>
+        <quantity>5</quantity>
+        <price>5</price>
+        <price_total>25</price_total>
+    </item>
+    <item>
+        <no>4</no>
+        <name>Cukierki</name>
+        <measure>kg.</measure>
+        <quantity>3</quantity>
+        <price>20</price>
+        <price_total>60</price_total>
+    </item>
+    <payment>przelew 24.04.2018</payment>
+    <bank>Miły Bank S.A.</bank>
+    <bank2>1234 5678 0000 0000 1024 2048</bank2>
+</invoice>

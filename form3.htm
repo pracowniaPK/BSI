@@ -8,93 +8,8 @@
     <title>BSI</title>
     <link rel="stylesheet prefetch" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
     <link rel="stylesheet" href="styl.css" />
-    <script>
-        function CheckForm() {
-            var name1 = document.getElementById("name1");
-            var name2 = document.getElementById("name2");
-            var phone = document.getElementById("phone");
-            var city = document.getElementById("city");
-            var street = document.getElementById("street");
-            var address_number = document.getElementById("address_number");
-            var address_number2 = document.getElementById("address_number2");
-            var address_code = document.getElementById("address_code");
-            var birthday = document.getElementById("birthday");
-            var email = document.getElementById("email");
-
-            var name_regex = /^([A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,30})$/;
-            var number_regex = /^(\d{1,20})$/;
-            var address_code_regex = /^(\d{2}-\d{3})$/;
-            var phone_regex = /^(\d{9})$/;
-            var phone_regex2 = /^(\d{3}-\d{3}-\d{3})$/;
-            var email_regxp = /^([\w]{1,30}@[\w]{2,10}.[\w]{2,5})$/;
-            var birthdate_regxp = /^([0-3][0-9]-[0-1][0-9]-\d{4})$/;
-
-            var send = true;
-
-            if (name_regex.test(name1.value)) {
-                name1.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                name1.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (name_regex.test(name2.value)) {
-                name2.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                name2.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (email_regxp.test(email.value)) {
-                email.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                email.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (phone_regex.test(phone.value) || phone_regex2.test(phone.value)) {
-                phone.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                phone.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (name_regex.test(city.value)) {
-                city.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                city.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (name_regex.test(street.value)) {
-                street.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                street.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (number_regex.test(address_number.value)) {
-                address_number.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                address_number.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (number_regex.test(address_number2.value)) {
-                address_number2.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                address_number2.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (address_code_regex.test(address_code.value)) {
-                address_code.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                address_code.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-            if (birthdate_regxp.test(birthday.value)) {
-                birthday.style.background = "rgba(255, 255, 255, 0.329)";
-            } else {
-                birthday.style.background = "rgba(255, 125, 125, 0.5)";
-                send = false;
-            }
-
-            return send;
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="form_check.js"></script>
 </head>
 
 <body>
@@ -105,7 +20,7 @@
         <h1>Form</h1>
         <h2>Dane</h2>
 
-        <form action="index.htm" onsubmit="return CheckForm();" action="#" method="get">
+        <form action="index.htm" onsubmit="return CheckForm();" method="get">
             <div class="nadramka_form">
                 <div class="ramka_form">
                     Imię:</div>
@@ -239,6 +154,7 @@
                 <div class="ramka_form">
                     <input type="reset" />
                 </div>
+                <button type="button" onclick="return CheckForm();">Naciśnij</button>
             </div>
         </form>
         <p>

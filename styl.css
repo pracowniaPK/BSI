@@ -32,7 +32,7 @@ a {
   display: inline-block;
   padding: 0 0.5em;
   border: 1px solid rgba(255, 255, 255, 0);
-  margin: -0.5px
+  margin: -0.5px;
   /* no underline */
 }
 
@@ -83,7 +83,13 @@ select {
   margin: 0.5em 0;
 }
 
-input[type=text], input[type=password], input[type=date], input[type=submit], input[type=reset], select, textarea {
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="submit"],
+input[type="reset"],
+select,
+textarea {
   color: #444444;
   border: 0px solid;
   background-color: rgba(255, 255, 255, 0.329);
@@ -124,26 +130,27 @@ td {
   padding: 1em;
 }
 
-td.obrazek, tr.pic td {
-  vertical-align:middle;
+td.obrazek,
+tr.pic td {
+  vertical-align: middle;
   padding: 0em;
 }
 
 td div img {
   width: 100%;
-  text-align:center; 
+  text-align: center;
   vertical-align: top;
 }
 
 td div {
-  text-align:center; 
-  vertical-align:middle;
+  text-align: center;
+  vertical-align: middle;
   overflow: hidden;
   box-sizing: border-box;
 }
 
 table.gallery td {
-  text-align:center; 
+  text-align: center;
 }
 
 .tabela {
@@ -187,7 +194,7 @@ table.gallery td {
   width: 66%;
 }
 
-.calculator{
+.calculator {
   width: 400px;
   padding: 4px;
   border: 1px solid #444444;
@@ -213,4 +220,8 @@ table.gallery td {
   background: rgba(211, 211, 211, 0);
   text-align: right;
   border: 0;
+}
+
+input.is-invalid {
+  background-color: rgba(255, 125, 125, 0.5);
 }

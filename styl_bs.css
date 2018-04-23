@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(-90deg, #829c57, #60913b);
+  color: #444444;
+}
+
+.container {
+  margin-top: 3em;
+  padding: 2em;
+  background: rgba(211, 211, 211, 0.5);
+  border: 2px solid #444444;
+  border-radius: 4px;
+}
+
+.nav {
+  background: rgba(211, 211, 211, 0.5);
+}
+
+.nav-item a {
+  color: #444444;
+}
+
+.nav-item a:hover {
+  background: rgba(211, 211, 211, 0.7);
+}
+
+.form-control {
+  background: rgba(211, 211, 211, 0.5);
+}
+
+.row_buffer {
+  margin-top: 0.5em;
+}

@@ -1,15 +1,4 @@
 function CheckForm() {
-  var name1 = document.getElementById("name1");
-  var name2 = document.getElementById("name2");
-  var phone = document.getElementById("phone");
-  var city = document.getElementById("city");
-  var street = document.getElementById("street");
-  var address_number = document.getElementById("address_number");
-  var address_number2 = document.getElementById("address_number2");
-  var address_code = document.getElementById("address_code");
-  var birthday = document.getElementById("birthday");
-  var email = document.getElementById("email");
-
   var name_regex = /^([A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,30})$/;
   var number_regex = /^(\d{1,20})$/;
   var address_code_regex = /^(\d{2}-\d{3})$/;
@@ -81,6 +70,6 @@ function CheckForm() {
     $("#birthday").addClass("is-invalid");
     send = false;
   }
-  return false;
+
   return send;
 }

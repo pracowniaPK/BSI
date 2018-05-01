@@ -4,16 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <?php
+        require("../6_PHP/check.php");
+    ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>BSI</title>
     <link rel="stylesheet prefetch" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
-    <link rel="stylesheet" href="styl.css" />
+    <link rel="stylesheet" href="../styl.css" />
 </head>
 
 <body>
     <div class="ramka">
         <div class="ramka_linki">
-            <a class="menu" href="index.htm">powrót: Główna</a>
+            <a class="menu" href="../index.php">powrót: Główna</a>
         </div>
         <div class="code">&lt;table&gt;</div>
         <table>
@@ -61,7 +64,7 @@
                 <td colspan="2">Jakim sposobem rządził Kazimierz państwem i narodem.</td>
                 <td colspan="2" class="obrazek">
                     <div>
-                        <img src="img/m1.jpg" alt="muffin" /> </div>
+                        <img src="../img/m1.jpg" alt="muffin" /> </div>
                 </td>
             </tr>
             <tr>
@@ -74,7 +77,7 @@
                     i kanoników wszystkich kościołów upominał, aby przy kościołach swoich przebywali.</td>
                 <td colspan="2" class="obrazek">
                     <div>
-                        <img src="img/m2.jpg" alt="muffin" /> </div>
+                        <img src="../img/m2.jpg" alt="muffin" /> </div>
                 </td>
             </tr>
             <tr>

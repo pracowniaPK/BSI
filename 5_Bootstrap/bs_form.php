@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <?php
+        require("../6_PHP/check.php");
+    ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +14,7 @@
         crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="styl_bs.css" />
+    <link rel="stylesheet" href="../styl_bs.css" />
 
     <script src="form_check.js"></script>
 
@@ -21,19 +24,19 @@
 <body>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link active" href="index.htm">powrót: Główna</a>
+            <a class="nav-link active" href="../index.php">powrót: Główna</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_index.htm">Tekst</a>
+            <a class="nav-link" href="bs_index.php">Tekst</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_gallery.htm">Galeria</a>
+            <a class="nav-link" href="bs_gallery.php">Galeria</a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" href="#">Formularz</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_calculator.htm">Kalkulator</a>
+            <a class="nav-link" href="bs_calculator.php">Kalkulator</a>
         </li>
     </ul>
     <div class="container">

@@ -4,6 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <?php
+        require("6_PHP/check.php");
+    ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>BSI</title>
     <link rel="stylesheet prefetch" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />

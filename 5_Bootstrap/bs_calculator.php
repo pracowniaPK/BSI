@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <?php
+        require("../6_PHP/check.php");
+    ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styl_bs.css" />
+    <link rel="stylesheet" href="../styl_bs.css" />
 
     <title>BSI</title>
 </head>
@@ -18,16 +21,16 @@
 <body>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link active" href="index.htm">powrót: Główna</a>
+            <a class="nav-link active" href="../index.php">powrót: Główna</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_index.htm">Tekst</a>
+            <a class="nav-link" href="bs_index.php">Tekst</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_gallery.htm">Galeria</a>
+            <a class="nav-link" href="bs_gallery.php">Galeria</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_form.htm">Formularz</a>
+            <a class="nav-link" href="bs_form.php">Formularz</a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" href="#">Kalkulator</a>

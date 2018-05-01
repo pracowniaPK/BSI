@@ -4,29 +4,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <?php
+        require("../6_PHP/check.php");
+    ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>BSI</title>
     <link rel="stylesheet prefetch" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
-    <link rel="stylesheet" href="styl.css" />
+    <link rel="stylesheet" href="../styl.css" />
 </head>
 
 <body>
     <div class="ramka">
         <div class="ramka_linki">
-            <a class="menu" href="index.htm">powrót: Główna</a>
+            <a class="menu" href="../index.php">powrót: Główna</a>
         </div>
         <div class="code">&lt;div&gt;</div>
 
         <div class="tabela tgaleria">
             <div class="tobrazki">
                 <div class="c2">
-                    <img src="img/m1.jpg" alt="kod" />
+                    <img src="../img/m1.jpg" alt="kod" />
                 </div>
                 <div class="c2">
-                    <img src="img/m2.jpg" alt="kod" />
+                    <img src="../img/m2.jpg" alt="kod" />
                 </div>
                 <div class="c2">
-                    <img src="img/m4.jpg" alt="kod" />
+                    <img src="../img/m4.jpg" alt="kod" />
                 </div>
             </div>
             <div>
@@ -36,13 +39,13 @@
             </div>
             <div class="tobrazki">
                 <div class="c2">
-                    <img src="img/m9.jpg" alt="kod" />
+                    <img src="../img/m9.jpg" alt="kod" />
                 </div>
                 <div class="c2">
-                    <img src="img/m5.jpg" alt="kod" />
+                    <img src="../img/m5.jpg" alt="kod" />
                 </div>
                 <div class="c2">
-                    <img src="img/m6.jpg" alt="kod" />
+                    <img src="../img/m6.jpg" alt="kod" />
                 </div>
             </div>
             <div>
@@ -52,13 +55,13 @@
             </div>
             <div class="tobrazki">
                 <div class="c2">
-                    <img src="img/m3.jpg" alt="kod" />
+                    <img src="../img/m3.jpg" alt="kod" />
                 </div>
                 <div class="c2">
-                    <img src="img/m7.jpg" alt="kod" />
+                    <img src="../img/m7.jpg" alt="kod" />
                 </div>
                 <div class="c2">
-                    <img src="img/m8.jpg" alt="kod" />
+                    <img src="../img/m8.jpg" alt="kod" />
                 </div>
             </div>
             <div>

@@ -13,13 +13,17 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-weight: 500;
-  margin: 2em 0 1em 0;
+  /* font-weight: 500;
+  margin: 2em 0 1em 0; */
 }
 
 h2 {
   font-weight: 500;
   margin: 2em 0 1em 0;
+}
+
+h6 {
+  margin: 2em 0 0 0;
 }
 
 p {
@@ -39,6 +43,8 @@ a {
 a.menu:hover {
   border-left-color: #444444;
   border-right-color: #444444;
+  text-decoration: none;
+  color: #444444;
 }
 
 .ramka {
@@ -64,8 +70,12 @@ a.menu:hover {
 }
 
 .ramka_linki {
-  margin: 1em auto;
+  margin: 1em;
   display: table;
+}
+
+h2 {
+  margin-top: 2em;
 }
 
 .ramka_form {

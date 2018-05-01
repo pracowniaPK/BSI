@@ -4,16 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <?php
+        require("../6_PHP/check.php");
+    ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>BSI</title>
     <link rel="stylesheet prefetch" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
-    <link rel="stylesheet" href="styl.css" />
+    <link rel="stylesheet" href="../styl.css" />
 </head>
 
 <body>
     <div class="ramka">
         <div class="ramka_linki">
-            <a class="menu" href="index.htm">powrót: Główna</a>
+            <a class="menu" href="../index.php">powrót: Główna</a>
         </div>
         <div class="code">&lt;div&gt;</div>
 
@@ -60,7 +63,7 @@
                     dobrych i sprawiedliwych, zaś najsroższym prześladowcą złych</div>
                 <div class="c2">Jakim sposobem rządził Kazimierz państwem i narodem.</div>
                 <div class="c2">
-                    <img src="img/m1.jpg" alt="muffin" />
+                    <img src="../img/m1.jpg" alt="muffin" />
                 </div>
             </div>
             <div>
@@ -72,7 +75,7 @@
                     prebendy i beneficya, jakiegokolwiek byli pochodzenia, — ponad szlachtę i dworzan swoich; prałatów zaś
                     i kanoników wszystkich kościołów upominał, aby przy kościołach swoich przebywali.</div>
                 <div class="c2">
-                    <img src="img/m2.jpg" alt="muffin" />
+                    <img src="../img/m2.jpg" alt="muffin" />
                 </div>
             </div>
             <div>

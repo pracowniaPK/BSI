@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <?php
+        require("../6_PHP/check.php");
+    ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +14,7 @@
         crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="styl_bs.css" />
+    <link rel="stylesheet" href="../styl_bs.css" />
 
     <title>BSI</title>
 </head>
@@ -19,19 +22,19 @@
 <body>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link active" href="index.htm">powrót: Główna</a>
+            <a class="nav-link active" href="../index.php">powrót: Główna</a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" href="#">Tekst</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_gallery.htm">Galeria</a>
+            <a class="nav-link" href="bs_gallery.php">Galeria</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_form.htm">Formularz</a>
+            <a class="nav-link" href="bs_form.php">Formularz</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="bs_calculator.htm">Kalkulator</a>
+            <a class="nav-link" href="bs_calculator.php">Kalkulator</a>
         </li>
     </ul>
     <div class="container">
@@ -81,7 +84,7 @@
                 i sprawiedliwych, zaś najsroższym prześladowcą złych</div>
             <div class="col-lg-4">Jakim sposobem rządził Kazimierz państwem i narodem.</div>
             <div class="col-lg-4">
-                <img src="img/m1.jpg" alt="muffin" />
+                <img src="../img/m1.jpg" alt="muffin" />
             </div>
         </div>
         <div class="row">
@@ -93,7 +96,7 @@
                 i beneficya, jakiegokolwiek byli pochodzenia, — ponad szlachtę i dworzan swoich; prałatów zaś i kanoników
                 wszystkich kościołów upominał, aby przy kościołach swoich przebywali.</div>
             <div class="col-lg-4">
-                <img src="img/m2.jpg" alt="muffin" />
+                <img src="../img/m2.jpg" alt="muffin" />
             </div>
         </div>
         <div class="row">

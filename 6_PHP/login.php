@@ -34,14 +34,15 @@
             </div>
             <div class="col-lg-4">
                 <?php
+                    error_reporting(E_ERROR | E_PARSE);
+                    session_start();
+
                     if (isset($_GET['fail']) && $_GET['fail'] == 1) {
                         echo '<div class="alert alert-warning  alert-dismissible fade show" role="alert">Nieprawidłowy login lub hasło!
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
                         ';
-                }
-                ?>
-                <?php
-                    session_start();
+                    }
+
                     if (isset($_SESSION['user']) && $_SESSION['user'] == 1) {
                         echo '
                         <button type="button" onclick="location.href=\'../index.php?logout=true\';" class="btn btn-light btn-lg btn-block">Wyloguj</button>

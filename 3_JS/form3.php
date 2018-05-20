@@ -23,7 +23,7 @@
         <h1>Form</h1>
         <h2>Dane</h2>
 
-        <form action="index.htm" onsubmit="return CheckForm();" method="get">
+        <form action="../index.php" onsubmit="return CheckForm();" method="get">
             <div class="nadramka_form">
                 <div class="ramka_form">
                     Imię:</div>

@@ -17,7 +17,7 @@
     <div class="ramka">
         <div class="ramka_linki">
             <h2>powrót:</h2>
-            <a class="menu" href="index.htm">Główna</a>
+            <a class="menu" href="../index.php">Główna</a>
         </div>
         <h1>O stronie</h1>
         <p>Strona internetowa w trakcie budowy. Pisana przez Pawła Kaczorowskiego jako projek na przedmiot BSI.</p>

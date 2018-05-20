@@ -5,10 +5,11 @@
 
 <head>
     <?php
+        error_reporting(E_ERROR | E_PARSE);
         if (isset($_GET['logout']) && $_GET['logout'] == "true") {
             session_start();
             $_SESSION['user'] = 0;
-            header('Location: ../6_PHP/login.php');
+            header('Location: 6_PHP/login.php');
         }
     ?>
     <?php
@@ -73,6 +74,7 @@
                 <div class="ramka_linki">
                     <a class="menu" href="6_PHP/login.php">Login</a>
                     <a class="menu" href="6_PHP/form.php">Formularz</a>
+                    <a class="menu" href="6_PHP/users_form.php">Dane</a>
                 </div>
                 <h6>Źródło</h6>
                 <div class="ramka_linki">

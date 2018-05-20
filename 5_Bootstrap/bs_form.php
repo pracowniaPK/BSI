@@ -41,7 +41,7 @@
     </ul>
     <div class="container">
 
-        <form action="index.htm" onsubmit="return CheckForm();" method="get">
+        <form action="../index.php" onsubmit="return CheckForm();" method="get">
             <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Imię:</label>
                 <div class="col-sm-9">

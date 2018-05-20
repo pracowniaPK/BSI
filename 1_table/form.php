@@ -22,7 +22,7 @@
         <h1>Form</h1>
         <h2>Dane</h2>
 
-        <form action="index.htm">
+        <form action="../index.php">
             <table class="forma">
                 <tr>
                     <td>Imię:</td>

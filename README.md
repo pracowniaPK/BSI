@@ -9,5 +9,6 @@ School project, exemplifying simple web-related technologies:
 * JQuery
 * XSLT
 * PHP
+* SQL
 
 Project is stored at: <http://pkacz.atwebpages.com/>
